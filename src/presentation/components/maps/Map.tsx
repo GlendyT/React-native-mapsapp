@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable react-native/no-inline-styles */
 import React, {useEffect, useRef, useState} from 'react';
 import MapView, {Polyline, PROVIDER_GOOGLE} from 'react-native-maps';
@@ -93,7 +94,7 @@ export const Map = ({showsUserLocation = true, initialLocation}: Props) => {
         iconName={isShowingPolyline ? 'eye-outline' : 'eye-off-outline'}
         onPress={() => setIsShowingPolyline(!isShowingPolyline)}
         style={{
-          bottom: 130,
+          bottom: 140,
           right: 20,
         }}
       />
